@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradeep Singh Thathola | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    /* ===== HERO ===== */
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    header img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(56,189,248,0.5);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-top: 20px;
+    }
+
+    header p {
+      max-width: 700px;
+      color: #94a3b8;
+      margin-top: 15px;
+      font-size: 1.05rem;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      font-size: 22px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 25px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 22px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+      animation: slideUp 1s ease;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #cbd5f5;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 0.9rem;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+      h2 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HERO ===== -->
+<header>
+  <img src="Photo.jpg" alt="Pradeep Singh Thathola">
+  <h1>Pradeep Singh Thathola</h1>
+  <p>
+    MCA Student | Java | Python | Full-Stack Developer | DSA Enthusiast  
+    Passionate about building real-world software solutions.
+  </p>
+
+  <div class="social">
+    <a href="https://github.com/pradeep4000" target="_blank"><i data-feather="github"></i></a>
+    <a href="https://www.linkedin.com/in/pradeep-singh-thathola-286508389/" target="_blank"><i data-feather="linkedin"></i></a>
+    <a href="mailto:singhpradeep.matela@gmail.com"><i data-feather="mail"></i></a>
+  </div>
+
+  <a href="pradeep_resume.pdf" class="btn" download>Download Resume</a>
+</header>
+
+<!-- ===== EDUCATION ===== -->
+<section>
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>MCA – Graphic Era Hill University</h3>
+    <p>CGPA: 6.99 | 2024 – 2026 | Dehradun</p>
+  </div>
+
+  <div class="card">
+    <h3>BCA – Graphic Era Hill University</h3>
+    <p>CGPA: 7.33 | 2021 – 2024 | Bhimtal</p>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Travel Planner (Dijkstra Algorithm)</h3>
+    <p>Java-based shortest path visualization system for Indian states.</p>
+    <a href="https://github.com/pradeep4000/travel-planner" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Next Word Generator</h3>
+    <p>Python predictive text model suggesting next words in real-time.</p>
+  </div>
+
+  <div class="card">
+    <h3>Family Money Management App</h3>
+    <p>Android + SQL multi-user finance management system.</p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section>
+  <h2>Technical Skills</h2>
+  <div class="card skills">
+    <span>C</span><span>C++</span><span>Java</span><span>Python</span>
+    <span>HTML</span><span>CSS</span><span>SQL</span>
+    <span>DSA</span><span>OOP</span><span>DBMS</span><span>OS</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section>
+  <h2>Contact</h2>
+  <div class="card contact">
+    <p><strong>Email:</strong> singhpradeep.matela@gmail.com</p>
+    <p><strong>Phone:</strong> 8395817921</p>
+    <p><strong>Location:</strong> Almora,Uttarakhand, India</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Pradeep Singh Thathola | Portfolio Website
+</footer>
+
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>
